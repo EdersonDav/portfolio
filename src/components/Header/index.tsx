@@ -1,14 +1,22 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { AiFillGithub } from 'react-icons/ai';
-import { BsLinkedin } from 'react-icons/bs';
-import { CgMail } from 'react-icons/cg';
+import { FaLinkedin } from 'react-icons/fa';
+import { CgMail, CgClose } from 'react-icons/cg';
 
 import { Container, DivName, DivNav, LiNav, DivSocial } from './styled';
-export const Header = () => {
+
+interface HeaderProps {
+  isOpen: boolean;
+  toogleMenuMobile: () => void;
+}
+export const Header = ({ isOpen, toogleMenuMobile }: HeaderProps) => {
   const [navSelected, setNavSelected] = useState('');
   return (
-    <Container>
+    <Container isOpen={isOpen}>
+      <button type="button" onClick={toogleMenuMobile}>
+        <CgClose size={30} />
+      </button>
       <DivName>
         <h1>
           <Link href="/">
@@ -56,7 +64,7 @@ export const Header = () => {
               href="https://www.linkedin.com/in/silvaedersonqueiroz/"
               target="_blank"
             >
-              <BsLinkedin size={20} />
+              <FaLinkedin size={20} />
               LinkedIn
             </a>
           </li>
