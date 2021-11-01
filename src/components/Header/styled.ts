@@ -18,19 +18,23 @@ export const Container = styled.div<MenuProps>`
     align-items: flex-end;
   }
   @media(max-width: 1205px){
-    display: ${({ isOpen }: MenuProps) => isOpen ? 'flex' : 'none'};
+    visibility: ${({ isOpen }: MenuProps) => !isOpen ? 'hidden' : 'visible'};
+    width: ${({ isOpen }: MenuProps) => !isOpen ? 0 : 250}px;
+    transition: all  .6s;
+    overflow-x: hidden;
+    z-index: 9;
+    display: flex;
     top: 0;
     bottom:0;
     height: 100vh;
     position: absolute;
-    width: 250px;
     flex-direction: column;
     right:0;
     justify-content: flex-start;
     border-left: 1px solid var(--green);
     border-radius: 16px 0 0 16px;
     >button{
-      background-color: transparent;
+      background-color: var(--black);
       border:0;
       display: flex;
       position: absolute;
@@ -39,17 +43,18 @@ export const Container = styled.div<MenuProps>`
       color: var(--green);
     }
     >div{
+      opacity: ${({ isOpen }: MenuProps) => !isOpen ? 0 : 1};
       flex-direction: column;
       height: auto;
       align-items: center;
       width: 100%;
+      transition: all .6s;
       padding: 0 20px;
     }
   }
 `
 
 export const DivName = styled.div`
-  min-width: 250px;
   h1{
     letter-spacing: 1px;
     font-size: 38px;
@@ -65,14 +70,20 @@ export const DivName = styled.div`
   }
   @media(max-width: 1205px){
     min-width: auto;
+    justify-content: flex-start;
     margin: 80px 0 40px;
+    
     h1{
       width: 100%;
+      min-width: 150px;
       display: flex;
-      align-items: center;
-      font-size: 28px;
+      a{
+       width: 100%;
+      }
+      align-items: flex-start;
+      font-size: 22px;
       span{
-        font-size: 28px;
+        font-size: 22px;
       }
     }
   }
@@ -119,11 +130,14 @@ export const LiNav = styled.li<NavProps>`
     }
   }
   @media(max-width: 1205px){
+    width: 100%;
+    min-width: 130px;
+    font-size: 16px;
     &, & + li{
       margin: 30px 0px;
     }
     span{
-      display: none;
+      font-size: 16px;
     }
   }
 `
@@ -139,7 +153,14 @@ export const DivSocial = styled.div`
       margin-bottom: 40px;
     }
     li{
-      a{
+      button{
+        background: transparent;
+        border: 0;
+        color: var(--white);
+        font-size: 16px;
+        letter-spacing: 2px;
+      }
+      a, button{
         display: flex;
         align-items: center;
         svg{
@@ -154,7 +175,7 @@ export const DivSocial = styled.div`
       font-size: 16px;
       letter-spacing: 2px;
       &:hover{
-        a{
+        a, button{
           color: var(--purple);
         }
       }
@@ -165,6 +186,71 @@ export const DivSocial = styled.div`
         span{
           display: none;
         }
+        &:hover{
+          a, button{
+            color: var(--white);
+          }
+        }
+      }
+    }
+  }
+`
+
+interface CopyEmailProps {
+  isCopy: boolean
+}
+
+export const CopyEmail = styled.div<CopyEmailProps>`
+  position: absolute;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  z-index: 20;
+  visibility: ${({ isCopy }: CopyEmailProps) => !isCopy ? 'hidden' : 'visible'};
+  bottom: ${({ isCopy }: CopyEmailProps) => !isCopy ? 0 : 20}px;
+  height: ${({ isCopy }: CopyEmailProps) => !isCopy ? '0px' : 'auto'};
+  transition: all .3s;
+  div{
+    background-color: #000;
+    display: flex;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    p{
+      font-size: 25px;
+      color: var(--white);
+      margin-right: 20px;
+    }
+    span{
+      display: flex;
+      align-items: center;
+      background: var(--green);
+      padding: 15px;
+      font-size: 20px;
+      font-weight: 500;
+      svg{
+        margin-left: 10px;
+      }
+      border-radius: 20px;
+    }
+    @media(max-width: 1205px){
+      padding: 10px;
+      p{
+        font-size: 16px;
+        margin-right: 10px;
+      }
+      span{
+        padding: 10px;
+        font-size: 12px;
+        svg{
+          margin-left: 5px;
+        }
+        border-radius: 20px;
       }
     }
   }
