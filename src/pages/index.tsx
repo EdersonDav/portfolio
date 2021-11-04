@@ -2,8 +2,10 @@ import type { GetStaticProps } from 'next';
 import { githubApi } from '../services/apis/github';
 import { HomeProps } from '../types/interfaces';
 
+import { Bio } from '../components/Bio';
+
 const Home = ({ userData }: HomeProps) => {
-  return <h1>{userData.name}</h1>;
+  return <Bio informations={userData} />;
 };
 
 export default Home;
