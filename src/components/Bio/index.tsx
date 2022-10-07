@@ -7,39 +7,24 @@ interface BioProps {
 }
 
 export const Bio = ({ informations }: BioProps) => {
-  const [skills, setSkills] = useState<string[]>([]);
-  const [bioTitle, setBioTitle] = useState('');
   const [bioSubTitle, setBioSubTitle] = useState('');
 
   useEffect(()=>{
     const bioGit = informations.bio;
-
-    setBioTitle(bioGit.split('.')[0])
-    setBioSubTitle(bioGit.split('.')[1].split(':')[0])
-    const skillsText = bioGit.split(':')[1].split(',')
-    setSkills(skillsText)
+    setBioSubTitle(bioGit)
     
   }, []);
 
   return (
     <Container>
       <BioText>
-        <div>{bioTitle}</div>
+        <div>Full-Stack Web</div>
         <div>
           <p>
             Hello, I'm Ederson Davi!
           </p>
           <Skkils>
             <p>{bioSubTitle}</p>
-            <ul>
-              {skills?.length ? (
-                <>
-                  {skills.map(sk =>(
-                    <li key={sk}>- {' '} {sk.trim()}</li>
-                  ))}
-                </>
-              ): null}
-            </ul>
           </Skkils>
         </div>
         
