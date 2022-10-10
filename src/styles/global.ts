@@ -41,4 +41,12 @@ export default createGlobalStyle`
       color: var(--white);
     }
   }
+  .wrapper{
+    max-width: 1280px;
+    width: max-content;
+    margin: auto;
+    @media(max-width: 1205px){
+      width: 100%;
+    }
+  }
 `

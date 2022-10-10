@@ -1,4 +1,6 @@
-import {useState, useEffect} from 'react';
+import { useState, useEffect } from 'react';
+import moment from 'moment';
+
 import { User } from '../../types/interfaces';
 import { Container, BioText, ImagesBio, Skkils } from './style';
 
@@ -21,10 +23,10 @@ export const Bio = ({ informations }: BioProps) => {
         <div>Full-Stack Web</div>
         <div>
           <p>
-            Hello, I'm Ederson Davi!
+            Olá, sou Ederson Davi!
           </p>
           <Skkils>
-            <p>{bioSubTitle}</p>
+            <p>{bioSubTitle}, desenvolvendo API's Rest e fazendo integrações em outros sistemas e construindo páginas responsivas seguindo designes desenhados no Figma. Gosto de me desenvolver diariamente e aprender formas novas de pensar em soluções.</p>
           </Skkils>
         </div>
         

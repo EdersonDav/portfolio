@@ -20,8 +20,26 @@ interface HeaderProps {
 }
 
 export const Header = ({ isOpen, toogleMenuMobile }: HeaderProps) => {
-  const [navSelected, setNavSelected] = useState('');
+  const [navSelected, setNavSelected] = useState('home');
   const [isCopy, setIsCopy] = useState(false);
+  const navMenu = [
+    {
+      title: 'Home',
+      key: 'home'
+    },
+    {
+      title: 'Tecnologias',
+      key: 'tech'
+    },
+    {
+      title: 'Projetos',
+      key: 'works'
+    },
+    {
+      title: 'Contato',
+      key: 'contact'
+    }
+  ]
 
   useEffect(() => {
     if (isCopy) {
@@ -48,27 +66,13 @@ export const Header = ({ isOpen, toogleMenuMobile }: HeaderProps) => {
         </DivName>
         <DivNav>
           <ul>
-            <LiNav selected={navSelected === 'work'}>
-              <Link href="/">
-                <a onClick={() => setNavSelected('work')}>
-                  <span>&lt;</span> Trabalhos<span> /&gt;</span>
-                </a>
-              </Link>
-            </LiNav>
-            <LiNav selected={navSelected === 'projects'}>
-              <Link href="/">
-                <a onClick={() => setNavSelected('projects')}>
-                  <span>&lt;</span> Projetos<span> /&gt;</span>
-                </a>
-              </Link>
-            </LiNav>
-            <LiNav selected={navSelected === 'contact'}>
-              <Link href="/">
-                <a onClick={() => setNavSelected('contact')}>
-                  <span>&lt;</span> Contato<span> /&gt;</span>
-                </a>
-              </Link>
-            </LiNav>
+            {navMenu.map(nav =>(
+              <LiNav key={nav.key} selected={navSelected === nav.key}>
+                <button onClick={() => setNavSelected(nav.key)}>
+                  <span>&lt;</span> {nav.title}<span> /&gt;</span>
+                </button>
+              </LiNav>
+            ))}
           </ul>
         </DivNav>
         <DivSocial>

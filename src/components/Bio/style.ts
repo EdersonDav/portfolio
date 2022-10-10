@@ -1,12 +1,11 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 100%;
   display: flex;
   align-items: flex-start;
   margin-top: 150px;
-  justify-content: space-around;
-  padding: 0 200px;
+  justify-content: space-between;
+  margin: 200px auto;
 `
 
 export const BioText = styled.div`
@@ -49,7 +48,7 @@ export const Skkils = styled.div`
 
 export const ImagesBio = styled.div`
   .userImage{
-    width: 600px;
+    max-width: 600px;
     border-radius: 50%;
     border: solid 3px var(--purple);
   }

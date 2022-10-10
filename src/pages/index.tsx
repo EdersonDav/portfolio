@@ -5,7 +5,11 @@ import { HomeProps } from '../types/interfaces';
 import { Bio } from '../components/Bio';
 
 const Home = ({ userData }: HomeProps) => {
-  return <Bio informations={userData} />;
+  return (
+    <div className="wrapper">
+      <Bio informations={userData} />
+    </div>
+  );
 };
 
 export default Home;

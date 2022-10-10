@@ -9,6 +9,7 @@ export const Container = styled.div<MenuProps>`
   justify-content: space-between;
   height: 100px;
   background-color: transparent;
+  position: sticky;
   >button{
     display: none;
   }
@@ -114,21 +115,26 @@ export const LiNav = styled.li<NavProps>`
 
   }
 
-  color: var(--white);
-  font-weight: 500;
-  font-size: 18px;
-  letter-spacing: 2px;
-  span{
-    display: inline;
-    color: ${({ selected }: NavProps) => selected ? 'var(--purple)' : 'transparent'};
-    transition: all 1s;
-    font-weight: 800;
-  }
-  &:hover{
+  button{
+    color: var(--white);
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 2px;
+    border:0;
+    background: transparent;
     span{
-      color: var(--purple);
+      display: inline;
+      color: ${({ selected }: NavProps) => selected ? 'var(--purple)' : 'transparent'};
+      transition: all 1s;
+      font-weight: 800;
+    }
+    &:hover{
+      span{
+        color: var(--purple);
+      }
     }
   }
+  
   @media(max-width: 1205px){
     width: 100%;
     min-width: 130px;
