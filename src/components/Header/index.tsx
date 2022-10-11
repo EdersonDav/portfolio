@@ -56,13 +56,7 @@ export const Header = ({ isOpen, toogleMenuMobile }: HeaderProps) => {
           <CgClose size={30} />
         </button>
         <DivName>
-          <h1>
-            <Link href="/">
-              <a onClick={() => setNavSelected('')}>
-                Ederson <span>Silva</span>
-              </a>
-            </Link>
-          </h1>
+            Ederson Silva
         </DivName>
         <DivNav>
           <ul>

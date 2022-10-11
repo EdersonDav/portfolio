@@ -5,7 +5,7 @@ interface MenuProps {
 }
 export const Container = styled.div<MenuProps>`
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: space-between;
   height: 100px;
   background-color: transparent;
@@ -16,10 +16,10 @@ export const Container = styled.div<MenuProps>`
   >div{
     height: 100%;
     display: flex;
-    align-items: flex-end;
   }
-  @media(max-width: 1205px){
+  @media(max-width: 1220px){
     visibility: ${({ isOpen }: MenuProps) => !isOpen ? 'hidden' : 'visible'};
+    background: var(--black);
     width: ${({ isOpen }: MenuProps) => !isOpen ? 0 : 250}px;
     transition: all  .6s;
     overflow-x: hidden;
@@ -32,7 +32,7 @@ export const Container = styled.div<MenuProps>`
     flex-direction: column;
     right:0;
     justify-content: flex-start;
-    border-left: 1px solid var(--green);
+    border-left: 1px solid var(--purple);
     border-radius: 16px 0 0 16px;
     >button{
       background-color: var(--black);
@@ -41,9 +41,9 @@ export const Container = styled.div<MenuProps>`
       position: absolute;
       top: 20px;
       right: 10px;
-      color: var(--green);
+      color: var(--purple);
     }
-    >div{
+    >div, >h1{
       opacity: ${({ isOpen }: MenuProps) => !isOpen ? 0 : 1};
       flex-direction: column;
       height: auto;
@@ -55,53 +55,54 @@ export const Container = styled.div<MenuProps>`
   }
 `
 
-export const DivName = styled.div`
-  h1{
-    letter-spacing: 1px;
-    font-size: 38px;
-    color: var(--white);
-    display: flex;
-    align-items: flex-end;
-    font-weight: 500;
-    span{
-      font-size: 38px;
-      color: var(--gray);
-      font-weight: normal;
-    }
-  }
-  @media(max-width: 1205px){
+export const DivName = styled.h1`
+  letter-spacing: 1px;
+  font-size: 32px;
+  color: var(--white);
+  font-weight: 500;
+  max-width: 245px ;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden ;
+  @media(max-width: 1220px){
     min-width: auto;
     justify-content: flex-start;
     margin: 80px 0 40px;
-    
-    h1{
       width: 100%;
       min-width: 150px;
       display: flex;
-      a{
-       width: 100%;
-      }
       align-items: flex-start;
       font-size: 22px;
-      span{
-        font-size: 22px;
-      }
-    }
   }
 
 `
 
 
 export const DivNav = styled.div`
+  width: 700px;
+  margin: 0 20px;
+
   >ul{
+    padding-bottom: 5px;
     display: flex;
     align-items: flex-end;
-    @media(max-width: 1205px){
+    width: 100%;
+    justify-content:space-between ;
+    
+  }
+  @media(max-width: 1220px){
+    width: 100%;
+    margin: 0;
+    >ul{
+      display: flex;
       flex-direction: column;
-      align-items: flex-start;
+      align-items: center;
       width: 100%;
       margin-bottom: 40px;
+      justify-content:start;
     }
+    
   }
 `
 
@@ -110,10 +111,6 @@ interface NavProps {
 }
 
 export const LiNav = styled.li<NavProps>`
-  & + li{
-    margin-left: 50px;
-
-  }
 
   button{
     color: var(--white);
@@ -135,10 +132,11 @@ export const LiNav = styled.li<NavProps>`
     }
   }
   
-  @media(max-width: 1205px){
+  @media(max-width: 1220px){
     width: 100%;
     min-width: 130px;
     font-size: 16px;
+    text-align: center ;
     &, & + li{
       margin: 30px 0px;
     }
@@ -150,11 +148,12 @@ export const LiNav = styled.li<NavProps>`
 
 export const DivSocial = styled.div`
   >ul{
+    padding-bottom: 5px;
     display: flex;
     align-items: flex-end;
-    @media(max-width: 1205px){
+    @media(max-width: 1220px){
       flex-direction: column;
-      align-items: flex-start;
+      align-items: center;
       width: 100%;
       margin-bottom: 40px;
     }
@@ -185,7 +184,7 @@ export const DivSocial = styled.div`
           color: var(--purple);
         }
       }
-      @media(max-width: 1205px){
+      @media(max-width: 1220px){
         &, & + li{
           margin: 30px 0px;
         }
@@ -235,7 +234,7 @@ export const CopyEmail = styled.div<CopyEmailProps>`
     span{
       display: flex;
       align-items: center;
-      background: var(--green);
+      background: var(--purple);
       padding: 15px;
       font-size: 20px;
       font-weight: 500;
@@ -244,7 +243,7 @@ export const CopyEmail = styled.div<CopyEmailProps>`
       }
       border-radius: 20px;
     }
-    @media(max-width: 1205px){
+    @media(max-width: 1220px){
       padding: 10px;
       p{
         font-size: 16px;

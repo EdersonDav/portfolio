@@ -6,7 +6,7 @@ interface MenuProps {
 
 export const Container = styled.button`
   display: none;
-  @media(max-width: 1205px){
+  @media(max-width: 1220px){
     display: ${({ isOpen }: MenuProps) => isOpen ? 'none' : 'flex'};
     align-items: center;
     justify-content: center;
@@ -15,6 +15,6 @@ export const Container = styled.button`
     position: absolute;
     top: 20px;
     right: 10px;
-    color: var(--green);
+    color: var(--purple);
   }
 `
