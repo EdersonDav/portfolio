@@ -14,16 +14,16 @@ export const Bio = ({ informations }: BioProps) => {
   useEffect(()=>{
     const bioGit = informations.bio;
     setBioSubTitle(bioGit)
-    
   }, []);
 
   return (
     <Container>
       <BioText>
-        <div>Full-Stack Web</div>
         <div>
           <p>
-            Olá, sou Ederson Davi!
+            Olá, sou Ederson Silva
+          </p>
+          <p className='skill' >Desenvolvedor <span> Full-Stack Web </span>
           </p>
           <Skkils>
             <p>{bioSubTitle}, desenvolvendo API's Rest e fazendo integrações em outros sistemas e construindo páginas responsivas seguindo designes desenhados no Figma. Gosto de me desenvolver diariamente e aprender formas novas de pensar em soluções.</p>

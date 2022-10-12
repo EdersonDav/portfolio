@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, {keyframes} from "styled-components";
 
 export const Container = styled.div`
   display: flex;
@@ -12,23 +12,30 @@ export const BioText = styled.div`
   display: flex;
   flex-direction: column;
   padding-right: 100px;
-  >div:first-child{
-    margin-bottom: 50px;
-    font-size: 24px;
-    background-color: var(--green);
-    padding: 10px;
-    font-weight: 500;
-    display: flex;
-    justify-content: center;
-    color: var(--white);
-    border-radius: 20px;
-    max-width: 500px;
-  }
   p{
     color: var(--white);
-    font-size: 24px;
+    font-size: 20px;
     line-height: 30px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    &.skill{
+      font-size: 28px;
+      margin-bottom: 30px;
+      font-style: italic;
+      overflow: hidden ;
+      >span{
+        color: var(--green);
+        font-style: italic;
+        position: relative ;
+        &::after{
+          content: '}';
+          
+        }
+        &::before{
+          content: '{';
+        }
+
+      }
+    }
   }
 `
 
