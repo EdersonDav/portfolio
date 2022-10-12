@@ -15,6 +15,6 @@ export const Container = styled.button`
     position: absolute;
     top: 20px;
     right: 10px;
-    color: var(--purple);
+    color: var(--green);
   }
 `

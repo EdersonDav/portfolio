@@ -63,7 +63,7 @@ export const Header = ({ isOpen, toogleMenuMobile }: HeaderProps) => {
             {navMenu.map(nav =>(
               <LiNav key={nav.key} selected={navSelected === nav.key}>
                 <button onClick={() => setNavSelected(nav.key)}>
-                  <span>&lt;</span> {nav.title}<span> /&gt;</span>
+                  {nav.title}
                 </button>
               </LiNav>
             ))}

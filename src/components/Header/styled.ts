@@ -32,7 +32,7 @@ export const Container = styled.div<MenuProps>`
     flex-direction: column;
     right:0;
     justify-content: flex-start;
-    border-left: 1px solid var(--purple);
+    border-left: 1px solid var(--green);
     border-radius: 16px 0 0 16px;
     >button{
       background-color: var(--black);
@@ -41,7 +41,7 @@ export const Container = styled.div<MenuProps>`
       position: absolute;
       top: 20px;
       right: 10px;
-      color: var(--purple);
+      color: var(--green);
     }
     >div, >h1{
       opacity: ${({ isOpen }: MenuProps) => !isOpen ? 0 : 1};
@@ -68,12 +68,10 @@ export const DivName = styled.h1`
   @media(max-width: 1220px){
     min-width: auto;
     justify-content: flex-start;
+    max-width: 245px ;
     margin: 80px 0 40px;
-      width: 100%;
-      min-width: 150px;
-      display: flex;
-      align-items: flex-start;
-      font-size: 22px;
+    text-align:center ;
+    font-size: 22px;
   }
 
 `
@@ -111,6 +109,8 @@ interface NavProps {
 }
 
 export const LiNav = styled.li<NavProps>`
+  display:flex ;
+  justify-content: center ;
 
   button{
     color: var(--white);
@@ -119,29 +119,44 @@ export const LiNav = styled.li<NavProps>`
     letter-spacing: 2px;
     border:0;
     background: transparent;
-    span{
-      display: inline;
-      color: ${({ selected }: NavProps) => selected ? 'var(--purple)' : 'transparent'};
+    &::after{
+      content: '/>';
+    }
+    &::before{
+      content: '<';
+    }
+    &::after, &::before{
+      margin: 0 5px;
+      color: ${({ selected }: NavProps) => selected ? 'var(--green)' : 'transparent'};
       transition: all 1s;
       font-weight: 800;
     }
     &:hover{
-      span{
-        color: var(--purple);
+      &::after, &::before{
+        color: var(--green);
       }
     }
+    
   }
   
   @media(max-width: 1220px){
     width: 100%;
     min-width: 130px;
     font-size: 16px;
-    text-align: center ;
+    overflow:hidden ;
+    button{
+      max-width: 260px ;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      overflow: hidden ;
+      text-align:center ;
+      &::after, &::before{
+        font-size: 16px;
+      }
+    }
     &, & + li{
       margin: 30px 0px;
-    }
-    span{
-      font-size: 16px;
     }
   }
 `
@@ -181,7 +196,7 @@ export const DivSocial = styled.div`
       letter-spacing: 2px;
       &:hover{
         a, button{
-          color: var(--purple);
+          color: var(--green);
         }
       }
       @media(max-width: 1220px){
@@ -234,7 +249,7 @@ export const CopyEmail = styled.div<CopyEmailProps>`
     span{
       display: flex;
       align-items: center;
-      background: var(--purple);
+      background: var(--green);
       padding: 15px;
       font-size: 20px;
       font-weight: 500;

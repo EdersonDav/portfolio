@@ -15,7 +15,7 @@ export const BioText = styled.div`
   >div:first-child{
     margin-bottom: 50px;
     font-size: 24px;
-    background-color: var(--purple);
+    background-color: var(--green);
     padding: 10px;
     font-weight: 500;
     display: flex;
@@ -50,6 +50,6 @@ export const ImagesBio = styled.div`
   .userImage{
     max-width: 600px;
     border-radius: 50%;
-    border: solid 3px var(--purple);
+    border: solid 2px var(--green);
   }
 `
