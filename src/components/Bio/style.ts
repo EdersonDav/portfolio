@@ -6,12 +6,19 @@ export const Container = styled.div`
   margin-top: 150px;
   justify-content: space-between;
   margin: 200px auto;
+  @media(max-width: 1080px){
+    flex-direction: column-reverse;
+    margin: 100px auto;
+  }
 `
 
 export const BioText = styled.div`
   display: flex;
   flex-direction: column;
   padding-right: 100px;
+  @media(max-width: 1080px){
+    padding:0;
+  }
   p{
     color: var(--white);
     font-size: 20px;
@@ -36,6 +43,14 @@ export const BioText = styled.div`
 
       }
     }
+    @media(max-width: 760px){
+      font-size: 16px;
+      line-height: 18px;
+      &.skill{
+        font-size: 20px;
+        margin-bottom: 18px;
+      }
+    }
   }
 `
 
@@ -45,11 +60,10 @@ export const Skkils = styled.div`
     font-size: 20px;
     line-height: 30px;
     margin-bottom: 10px;
-  }
-  ul{
-    color: var(--white);
-    font-size: 18px;
-    line-height: 25px;
+    @media(max-width: 760px){
+      font-size: 16px;
+      line-height: 20px;
+    }
   }
 `
 
@@ -58,5 +72,9 @@ export const ImagesBio = styled.div`
     max-width: 600px;
     border-radius: 50%;
     border: solid 2px var(--green);
+    @media(max-width: 1080px){
+      width: 70%;
+      margin-bottom: 50px;
+    }
   }
 `

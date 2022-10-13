@@ -43,7 +43,7 @@ export default createGlobalStyle`
   }
   .wrapper{
     max-width: 1280px;
-    width: max-content;
+    width: 100%;
     margin: auto;
     @media(max-width: 1220px){
       width: 100%;
