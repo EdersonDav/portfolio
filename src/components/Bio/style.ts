@@ -79,6 +79,41 @@ export const ImagesBio = styled.div`
   }
 `
 
+export const ButtonInfo = styled.div`
+  margin-top: 50px ;
+  display: flex ;
+  align-items: center;
+  height:100px ;
+
+  >div{
+    color: var(--white);
+    height: 100%;
+    margin:0 ;
+    margin-right: 20px;
+    display:flex;
+    align-items: end;
+    font-size: 40px;
+    >p{
+      font-weight: 700;
+      color: var(--gray);
+      display:flex;
+      flex-direction: column;
+      font-size: 10px;
+      text-transform: uppercase;
+      margin: 0;
+      margin-left: 10px;
+      padding-bottom: 7px;
+      >span{
+        line-height:10px ;
+      }
+    }
+  }
+
+  @media(max-width: 760px){
+    margin-top: 20px;
+  }
+`
+
 export const DownloadCV = styled.a`
   display: flex;
   align-items: center;
@@ -88,7 +123,6 @@ export const DownloadCV = styled.a`
   border-radius: 10px;
   border: 2px solid var(--green);
   max-width: 200px ;
-  margin-top: 30px ;
   color: var(--white);
   font-size: 18px;
   >svg{

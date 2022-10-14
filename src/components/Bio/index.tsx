@@ -8,7 +8,8 @@ import {
   BioText, 
   ImagesBio, 
   Skkils,
-  DownloadCV 
+  DownloadCV,
+  ButtonInfo
 } from './style';
 
 interface BioProps {
@@ -36,9 +37,18 @@ export const Bio = ({ informations }: BioProps) => {
             <p>{bioSubTitle}, desenvolvendo API's Rest e fazendo integrações em outros sistemas e construindo páginas responsivas seguindo designes desenhados no Figma. Gosto de me desenvolver diariamente e aprender formas novas de pensar em soluções.</p>
           </Skkils>
         </div>
-        <DownloadCV className="cv" href="assets/EdersonSilva.pdf" download>
-          Resume <BsFillFileEarmarkArrowDownFill />
-        </DownloadCV>
+        <ButtonInfo>
+          <div>
+            2 
+            <p>
+              anos
+              <span>de experiência </span>
+            </p> 
+          </div>
+          <DownloadCV className="cv" href="assets/EdersonSilva.pdf" download>
+            Resume <BsFillFileEarmarkArrowDownFill />
+          </DownloadCV>
+        </ButtonInfo>
         
       </BioText>
       <ImagesBio>

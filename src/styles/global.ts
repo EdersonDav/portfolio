@@ -10,6 +10,8 @@ export default createGlobalStyle`
     --orange:#ff7d43;
     --white:#fff;
     --gray:#d8d8d8;
+    --gray-black: #2d2f33;
+
   }
   html{
     background: var(--black);
