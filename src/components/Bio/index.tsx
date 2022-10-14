@@ -1,8 +1,15 @@
 import { useState, useEffect } from 'react';
+import { BsFillFileEarmarkArrowDownFill } from 'react-icons/bs'
 import moment from 'moment';
 
 import { User } from '../../types/interfaces';
-import { Container, BioText, ImagesBio, Skkils } from './style';
+import { 
+  Container, 
+  BioText, 
+  ImagesBio, 
+  Skkils,
+  DownloadCV 
+} from './style';
 
 interface BioProps {
   informations: User;
@@ -29,6 +36,9 @@ export const Bio = ({ informations }: BioProps) => {
             <p>{bioSubTitle}, desenvolvendo API's Rest e fazendo integrações em outros sistemas e construindo páginas responsivas seguindo designes desenhados no Figma. Gosto de me desenvolver diariamente e aprender formas novas de pensar em soluções.</p>
           </Skkils>
         </div>
+        <DownloadCV className="cv" href="assets/EdersonSilva.pdf" download>
+          Resume <BsFillFileEarmarkArrowDownFill />
+        </DownloadCV>
         
       </BioText>
       <ImagesBio>
@@ -38,6 +48,7 @@ export const Bio = ({ informations }: BioProps) => {
           alt={informations.name}
         />
       </ImagesBio>
+      
     </Container>
   );
 };

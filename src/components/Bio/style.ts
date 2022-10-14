@@ -78,3 +78,27 @@ export const ImagesBio = styled.div`
     }
   }
 `
+
+export const DownloadCV = styled.a`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  padding: 15px;
+  border-radius: 10px;
+  border: 2px solid var(--green);
+  max-width: 200px ;
+  margin-top: 30px ;
+  color: var(--white);
+  font-size: 18px;
+  >svg{
+    margin-left: 10px ;
+  }
+  @media(max-width: 760px){
+    padding: 11px;
+    max-width: 120px;
+    margin-top: 20px;
+    font-size: 14px;
+  }
+`
+
