@@ -10,6 +10,8 @@ export default createGlobalStyle`
     --orange:#ff7d43;
     --white:#fff;
     --gray:#d8d8d8;
+    --gray-black: #2d2f33;
+
   }
   html{
     background: var(--black);
@@ -45,6 +47,7 @@ export default createGlobalStyle`
     max-width: 1280px;
     width: 100%;
     margin: auto;
+    position: relative;
     @media(max-width: 1220px){
       width: 100%;
     }
