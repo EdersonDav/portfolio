@@ -47,6 +47,7 @@ export default createGlobalStyle`
     max-width: 1280px;
     width: 100%;
     margin: auto;
+    position: relative;
     @media(max-width: 1220px){
       width: 100%;
     }

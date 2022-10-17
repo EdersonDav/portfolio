@@ -8,7 +8,7 @@ import {
   BioText, 
   ImagesBio, 
   Skkils,
-  DownloadCV,
+  // DownloadCV,
   ButtonInfo
 } from './style';
 
@@ -39,15 +39,18 @@ export const Bio = ({ informations }: BioProps) => {
         </div>
         <ButtonInfo>
           <div>
-            2 
+            {moment().diff(moment('2020-03', 'YYYY-MM'), 'years')}
             <p>
               anos
               <span>de experiência </span>
             </p> 
           </div>
-          <DownloadCV className="cv" href="assets/EdersonSilva.pdf" download>
-            Resume <BsFillFileEarmarkArrowDownFill />
-          </DownloadCV>
+          <a href="assets/EdersonSilva.pdf" download>
+            <BsFillFileEarmarkArrowDownFill />
+            <p className='cv'>
+              Resume
+            </p>
+          </a>
         </ButtonInfo>
         
       </BioText>
