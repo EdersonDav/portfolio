@@ -68,6 +68,7 @@ export const Skkils = styled.div`
 `
 
 export const ImagesBio = styled.div`
+  position: relative;
   .userImage{
     max-width: 600px;
     border-radius: 50%;

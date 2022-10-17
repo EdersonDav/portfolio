@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
-import { BsFillFileEarmarkArrowDownFill } from 'react-icons/bs'
+import { BsFillFileEarmarkArrowDownFill } from 'react-icons/bs';
 import moment from 'moment';
 
+import { TechIcons } from './components/TechIcons';
 import { User } from '../../types/interfaces';
 import { 
   Container, 
@@ -55,6 +56,7 @@ export const Bio = ({ informations }: BioProps) => {
         
       </BioText>
       <ImagesBio>
+        <TechIcons />
         <img
           className="userImage"
           src={informations.avatar_url}
