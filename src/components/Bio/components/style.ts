@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, {keyframes} from "styled-components";
 
 export const Container = styled.div`
   position: absolute;
@@ -6,9 +6,12 @@ export const Container = styled.div`
   background: transparent;
   width:100%;
   height:100%;
-  >div{
-    
-  }
+`
+
+const floating = keyframes`
+  0% { transform: translate(0,  0px); }
+  50%  { transform: translate(0, 5px); }
+  100%   { transform: translate(0, -0px); }   
 `
 
 export const IconContainer = styled.div<{color: string}>`
@@ -21,18 +24,21 @@ export const IconContainer = styled.div<{color: string}>`
   background-color: var(--white);
   position: absolute;
   box-shadow: -1px 10px 30px -5px ${({color})=> color ? color : 'var(--white)'};
+  animation: ${floating} 3s ease-in-out infinite;
   >svg{
     font-size: 50px;
   }
   &:nth-child(1){
     top: 4%;
     right: 2%;
+    animation-delay: 2s;
   }
   &:nth-child(2){
     bottom: -10%;
     right: 10%;
     width: 15%;
     height: 15%;
+    animation-delay: 4s;
     svg{
       font-size: 40px;
     }
@@ -42,6 +48,7 @@ export const IconContainer = styled.div<{color: string}>`
     bottom: 40%;
     right: 10%;
     width: 12%;
+    animation-delay: 1s;
     height: 12%;
     svg{
       font-size: 30px;
@@ -51,6 +58,7 @@ export const IconContainer = styled.div<{color: string}>`
   &:nth-child(4){
     bottom: 10%;
     left: -5%;
+    animation-delay: 7s;
   }
 
   &:nth-child(5){
