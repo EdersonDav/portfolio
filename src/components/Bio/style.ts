@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+export const Container = styled.section`
   display: flex;
   align-items: flex-start;
   margin-top: 150px;
@@ -24,33 +24,39 @@ export const BioText = styled.div`
     font-size: 20px;
     line-height: 30px;
     margin-bottom: 20px;
-    &.skill{
-      font-size: 28px;
-      margin-bottom: 30px;
-      font-style: italic;
-      overflow: hidden ;
-      >span{
-        color: var(--green);
-        font-style: italic;
-        position: relative ;
-        &::after{
-          content: '}';
-          
-        }
-        &::before{
-          content: '{';
-        }
-
-      }
-    }
+    
     @media(max-width: 760px){
       font-size: 16px;
       line-height: 18px;
-      &.skill{
-        font-size: 20px;
-        margin-bottom: 18px;
-      }
     }
+  }
+  h2{
+    font-weight: 500;
+    color: var(--white);
+    line-height: 30px;
+    font-size: 28px;
+    margin-bottom: 30px;
+    font-style: italic;
+    overflow: hidden ;
+    >span{
+      color: var(--green);
+      font-style: italic;
+      position: relative ;
+      &::after{
+        content: '}';
+        
+      }
+      &::before{
+        content: '{';
+      }
+
+    }
+    @media(max-width: 760px){
+      line-height: 18px;
+      font-size: 20px;
+      margin-bottom: 18px;
+    }
+
   }
 `
 

@@ -26,14 +26,13 @@ export const Bio = ({ informations }: BioProps) => {
   }, []);
 
   return (
-    <Container>
+    <Container id="home">
       <BioText>
         <div>
           <p>
             Olá, sou Ederson Silva
           </p>
-          <p className='skill' >Desenvolvedor <span> Full-Stack Web </span>
-          </p>
+          <h2 className='skill' >Desenvolvedor <span> Full-Stack Web </span></h2>
           <Skkils>
             <p>{bioSubTitle}, desenvolvendo API's Rest e fazendo integrações em outros sistemas e construindo páginas responsivas seguindo designes desenhados no Figma. Gosto de me desenvolver diariamente e aprender formas novas de pensar em soluções.</p>
           </Skkils>
