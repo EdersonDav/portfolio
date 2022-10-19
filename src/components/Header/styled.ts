@@ -58,7 +58,6 @@ export const Container = styled.div<MenuProps>`
 export const DivName = styled.h1`
   letter-spacing: 1px;
   font-size: 32px;
-  color: var(--white);
   font-weight: 500;
   max-width: 245px ;
   display: -webkit-box;
@@ -113,7 +112,7 @@ export const LiNav = styled.li<NavProps>`
   justify-content: center ;
 
   button{
-    color: var(--white);
+    color: var(--txt-1);
     font-weight: 500;
     font-size: 18px;
     letter-spacing: 2px;
@@ -176,7 +175,7 @@ export const DivSocial = styled.div`
       button{
         background: transparent;
         border: 0;
-        color: var(--white);
+        color: var(--txt-1);
         font-size: 16px;
         letter-spacing: 2px;
       }
@@ -191,7 +190,7 @@ export const DivSocial = styled.div`
       & + li{
         margin-left: 40px;
       }
-      color: var(--white);
+      color: var(--txt-1);
       font-size: 16px;
       letter-spacing: 2px;
       &:hover{
@@ -208,7 +207,7 @@ export const DivSocial = styled.div`
         }
         &:hover{
           a, button{
-            color: var(--white);
+            color: var(--txt-1);
           }
         }
       }
@@ -243,7 +242,7 @@ export const CopyEmail = styled.div<CopyEmailProps>`
     align-items: center;
     p{
       font-size: 25px;
-      color: var(--white);
+      color: var(--txt-1);
       margin-right: 20px;
     }
     span{

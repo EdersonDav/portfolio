@@ -1,11 +1,9 @@
 import { Container } from './styled';
 
 export const Skills = ():JSX.Element =>{
-  const a = '';
-
   return(
-    <Container>
-      <h1>Techs</h1>
+    <Container id="technolies">
+      <h2>Technolies</h2>
     </Container>
   )
 }

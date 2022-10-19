@@ -21,9 +21,9 @@ export const IconContainer = styled.div<{color: string}>`
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  background-color: var(--white);
+  background-color: var(--shape);
   position: absolute;
-  box-shadow: -1px 10px 30px -5px ${({color})=> color ? color : 'var(--white)'};
+  box-shadow: -1px 10px 30px -5px ${({color})=> color ? color : 'var(--shape)'};
   animation: ${floating} 3s ease-in-out infinite;
   >svg{
     font-size: 50px;

@@ -1,13 +1,16 @@
 import type { GetStaticProps } from 'next';
+
 import { githubApi } from '../services/apis/github';
 import { HomeProps } from '../types/interfaces';
 
 import { Bio } from '../components/Bio';
+import { Skills } from '../components/Skills';
 
 const Home = ({ userData }: HomeProps) => {
   return (
     <div className="wrapper">
       <Bio informations={userData} />
+      <Skills />
     </div>
   );
 };

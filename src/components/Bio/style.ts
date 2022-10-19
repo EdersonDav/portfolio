@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const Container = styled.section`
   display: flex;
   align-items: flex-start;
-  margin-top: 150px;
   justify-content: space-between;
   margin: 200px auto;
   @media(max-width: 1080px){
@@ -20,7 +19,7 @@ export const BioText = styled.div`
     padding:0;
   }
   p{
-    color: var(--white);
+    color: var(--txt-1);
     font-size: 20px;
     line-height: 30px;
     margin-bottom: 20px;
@@ -31,8 +30,7 @@ export const BioText = styled.div`
     }
   }
   h2{
-    font-weight: 500;
-    color: var(--white);
+    color: var(--txt-1);
     line-height: 30px;
     font-size: 28px;
     margin-bottom: 30px;
@@ -62,7 +60,7 @@ export const BioText = styled.div`
 
 export const Skkils = styled.div`
   p{
-    color: var(--white);
+    color: var(--txt-1);
     font-size: 20px;
     line-height: 30px;
     margin-bottom: 10px;
@@ -96,7 +94,7 @@ export const ButtonInfo = styled.div`
   height:50px ;
 
   >div, >a{
-    color: var(--white);
+    color: var(--txt-1);
     height: 100%;
     margin:0 ;
     margin-right: 20px;

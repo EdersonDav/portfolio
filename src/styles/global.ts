@@ -8,14 +8,25 @@ export default createGlobalStyle`
     --blue:#1ea1ef;
     --red:#ff303c;
     --orange:#ff7d43;
-    --white:#fff;
+    --txt-1:#fff;
+    --shape:#fff;
     --gray:#d8d8d8;
     --gray-black: #2d2f33;
-
   }
   html{
     background: var(--black);
     padding: 0 5%;
+    &::-webkit-scrollbar-track {
+      background-color: var(--green);
+    }
+    &::-webkit-scrollbar {
+      width: 6px;
+      background: transparent;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: var(--shape);
+      border-radius: 50px;
+    }
   }
 
   *{
@@ -26,9 +37,20 @@ export default createGlobalStyle`
     text-decoration: none;
     font-family: "Roboto", sans-serif;
   }
+  section{
+    margin-bottom: 200px;
+  }
   
   button{
     cursor: pointer;
+  }
+
+  h1,h2{
+    color: var(--txt-1);
+  }
+
+  h2{
+    font-weight: 500;
   }
 
   ul{
@@ -38,9 +60,9 @@ export default createGlobalStyle`
   a{
     list-style: none;
     font-style: normal;
-    color: var(--white);
+    color: var(--txt-1);
     &:visited{
-      color: var(--white);
+      color: var(--txt-1);
     }
   }
   .wrapper{
