@@ -1,9 +1,11 @@
+import { SkillsScroll } from './components/SkillsScroll';
 import { Container } from './styled';
 
 export const Skills = ():JSX.Element =>{
   return(
     <Container id="technolies">
-      <h2>Technolies</h2>
+      <h2>Tecnologias</h2>
+      <SkillsScroll/>
     </Container>
   )
 }

@@ -19,7 +19,7 @@ export const Container = styled.div<MenuProps>`
   }
   @media(max-width: 1220px){
     visibility: ${({ isOpen }: MenuProps) => !isOpen ? 'hidden' : 'visible'};
-    background: var(--black);
+    background: var(--background);
     width: ${({ isOpen }: MenuProps) => !isOpen ? 0 : 250}px;
     transition: all  .6s;
     overflow-x: hidden;
@@ -35,7 +35,7 @@ export const Container = styled.div<MenuProps>`
     border-left: 1px solid var(--green);
     border-radius: 16px 0 0 16px;
     >button{
-      background-color: var(--black);
+      background-color: var(--background);
       border:0;
       display: flex;
       position: absolute;

@@ -2,19 +2,24 @@ import { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
   :root{
-    --black: #16191E;
+    --background: #16191E;
     --purple: #7b66fb;
     --green: #00e0b8;
     --blue:#1ea1ef;
     --red:#ff303c;
     --orange:#ff7d43;
     --txt-1:#fff;
+    --txt-2:#F8F8F8;
+    --txt-3:#eee;
     --shape:#fff;
     --gray:#d8d8d8;
     --gray-black: #2d2f33;
   }
+  /* --background #F8F8F8 */
+  /* --txt-2: #4B4B4B */
+  /*--txt-1: #212121; */
   html{
-    background: var(--black);
+    background: var(--background);
     padding: 0 5%;
     &::-webkit-scrollbar-track {
       background-color: var(--green);
