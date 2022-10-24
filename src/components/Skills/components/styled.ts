@@ -6,7 +6,7 @@ export const SkillsScrollContainer = styled.div`
   justify-content: start;
   height: auto;
   position: relative;
-  @media(max-width: 680px) {
+  @media(max-width: 780px) {
     display: none;
   }
   > nav{
@@ -14,6 +14,8 @@ export const SkillsScrollContainer = styled.div`
     list-style: none;
     padding: 0;
     width: 260px;
+    padding-top: 10px;
+
   }
 `
 
@@ -71,7 +73,7 @@ export const ListLinks = styled.li`
 export const ContentTexts = styled.div`
   margin-left: 20px;
   border-radius: 16px;
-  height: 250px;
+  height: 300px;
   padding: 10px 0px 10px 20px;
   background: var(--gray-black);
   width: 100%;
@@ -79,66 +81,70 @@ export const ContentTexts = styled.div`
     overflow-y: scroll;
     height: 100%;
     padding-right: 10px;
-    h2{
-      font-weight: bold;
-      font-size: 16px;
-      line-height: 20px;
-      color:var(--txt-1); 
-      margin: 16px auto;
-    }
+    div{
+      margin-bottom: 30px;
+      h2{
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 20px;
+        color:var(--txt-1); 
+        margin: 16px auto;
+      }
 
-    span, p, li{
-      font-weight: 500;
-      font-size: 14px;
-      line-height: 20px;
-      color: var(--txt-3); 
-      margin-bottom: 7px;
-      padding-left: 15px;
-      max-width: 80%;
-      font-style: italic;
+      span, p, li{
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        color: var(--txt-3); 
+        margin-bottom: 7px;
+        padding-left: 15px;
+        max-width: 80%;
+        font-style: italic;
 
-    }
+      }
 
-    h3{
-      font-weight: 600;
-      font-size: 15px;
-      line-height: 20px;
-      margin: 16px 0;
-      padding-left: 10px;
-      color:  var(--green);
+      h3{
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 20px;
+        margin: 16px 0;
+        padding-left: 10px;
+        color:  var(--green);
 
-    }
+      }
 
-    img{
-      width: 80%;
-      margin: auto;
-      display: block;
-      max-width: 630px;
-    }
+      img{
+        width: 80%;
+        margin: auto;
+        display: block;
+        max-width: 630px;
+      }
 
-    ul{
-      padding-left: 1.2rem;
-    }
+      ul{
+        padding-left: 1.2rem;
+      }
 
-    &::-webkit-scrollbar-track {
-      background-color: transparent;
-    }
-    &::-webkit-scrollbar {
-      width: 4px;
-      background: transparent;
-    }
-    &::-webkit-scrollbar-thumb {
-      background-color:var(--green);;
-      height: 40px;
-      border-radius: 50px;
-    }
-    a{
-      color: var(--blue-light);
-      text-decoration: underline;
-      &:visited{
+      &::-webkit-scrollbar-track {
+        background-color: transparent;
+      }
+      &::-webkit-scrollbar {
+        width: 4px;
+        background: transparent;
+      }
+      &::-webkit-scrollbar-thumb {
+        background-color:var(--green);
+        height: 40px;
+        border-radius: 50px;
+      }
+      a{
         color: var(--blue-light);
+        text-decoration: underline;
+        &:visited{
+          color: var(--blue-light);
+        }
       }
     }
+
   }
 
 `
@@ -147,8 +153,10 @@ export const SkillsScrollContainerMobile = styled.div`
   display: none;
   width: 100%;
   flex-direction: column;
-  background: #fff;
-  @media(max-width: 680px) {
+  background: var(--gray-black);
+  border-radius: 8px;
+  margin-top: 30px;
+  @media(max-width: 780px) {
     display: flex;
   }
 `
@@ -161,8 +169,9 @@ export const Toggle = styled.div<SkillsScrollContainerMobileProps>`
   height: 48px;
   overflow-y: hidden;
   padding:0 16px;
+  border-radius:8px ;
   ul{
-    padding-left: 1.2rem;
+    padding-left: 0.5rem;
   }
 
   button{
@@ -179,30 +188,41 @@ export const Toggle = styled.div<SkillsScrollContainerMobileProps>`
       padding-top:6px;
       font-size: 14px;
       font-weight: bold;
-      color: #4B4B4B;
+      color:var(--green);
       flex: 1;
       ${({ toggleMobileOpen }: SkillsScrollContainerMobileProps) => (toggleMobileOpen
-    ? css`
-            color: #ddd;
-            `
-    : null)
-  }
+        ? css`
+                color:var(--txt-1); 
+                `
+        : null)
+      }
+    }
+    svg{
+      ${({ toggleMobileOpen }: SkillsScrollContainerMobileProps) => (toggleMobileOpen
+        ? css`
+                color:var(--green); 
+                transform: rotate(180deg);
+                `
+        : css`color:var(--txt-1); `)
+      }
     }
   }
   
 
-  span, p, li{
+  span, p{
     font-weight: 500;
     font-size: 14px;
     line-height: 20px;
-    color:#999;
+    color:var(--txt-3); 
+    padding-left: 0.3rem;
+    font-style: italic;
   }
 
   h3{
     font-weight: 600;
     font-size: 14px;
     line-height: 20px;
-    color:#6C6C6C;
+    color:var(--green);
     margin: 16px 0;
   }
 
@@ -222,9 +242,11 @@ export const Toggle = styled.div<SkillsScrollContainerMobileProps>`
 
   ${({ toggleMobileOpen }: SkillsScrollContainerMobileProps) => (toggleMobileOpen
     ? css`
-      background: #F8F8F8;
+      background: var(--gray-black);
       height: auto;
       overflow-y: visible;
+      padding-bottom: 15px;
+      border: 1px solid var(--gray);
     `
     : null)
   }

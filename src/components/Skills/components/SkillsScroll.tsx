@@ -109,72 +109,72 @@ export const SkillsScroll = (): JSX.Element => {
     setToggleMobileOpen(toggleMobileOpen === number ? 0 : number);
   };
 
-  return width > 800 ? (
-    <SkillsScrollContainer>
-      <nav className="col-3">
-        {skillsData.map((item) => (
-          // se a countDivsScroll for maior ou igual ao numero do id,
-          // quer dizer que o texto desse titulo já foi 'scrollado' ou está em tela
-          <ListLinks
-            className={countDivsScroll >= Number(item.id.split('-')[1]) ? 'active' : ''}
-            key={item.id}
-          >
-            <div />
-            <a onClick={async (e) => await handleClickAncor(e)} href={`#${item.id}`}>
-              {item.title}
-            </a>
-          </ListLinks>
-        ))}
-      </nav>
-      <ContentTexts>
-        <div onScroll={handleScroll} ref={contentRef}>
+  return (
+    <>
+      <SkillsScrollContainer>
+        <nav className="col-3">
           {skillsData.map((item) => (
-            // O ref se aplica apenas a div que foi clicada
-            <div
-              ref={Number(item.id.split('-')[1]) === numberRef ? textRef : null}
-              id={item.id}
+            // se a countDivsScroll for maior ou igual ao numero do id,
+            // quer dizer que o texto desse titulo já foi 'scrollado' ou está em tela
+            <ListLinks
+              className={countDivsScroll >= Number(item.id.split('-')[1]) ? 'active' : ''}
               key={item.id}
             >
-              <h2>{item.title}</h2>
-              <div>
-                {item.skills.map(skill => (
-                  <Fragment key={skill.title}>
-                    <h3>{skill.title}</h3>
-                    <div dangerouslySetInnerHTML={{__html:skill.html}}></div>
-                  </Fragment>
-                ))}
-              </div>
-
-            </div>
+              <div />
+              <a onClick={async (e) => await handleClickAncor(e)} href={`#${item.id}`}>
+                {item.title}
+              </a>
+            </ListLinks>
           ))}
-        </div>
-      </ContentTexts>
-    </SkillsScrollContainer>
-  ) : (
-    <SkillsScrollContainerMobile>
-      {skillsData.map((item) => (
-        <Toggle
-          id={`${item.id}-mobile`}
-          key={`${item.id}-mobile`}
-          toggleMobileOpen={toggleMobileOpen === Number(item.id.split('-')[1])}
-        >
-          <button onClick={() => handleToggle(item.id)} type="button">
-            <h2>{item.title}</h2>
-            {toggleMobileOpen === Number(item.id.split('-')[1]) ? (
-              <IoIosArrowUp size={20} />
-            ) : (
-              <IoIosArrowDown size={20} />
-            )}
-          </button>
-          <div>
-            <ul>
-              {item.skills.map(skill => (
-                <li key={skill.title}>{skill.title}</li>
-              ))}
-            </ul>
+        </nav>
+        <ContentTexts>
+          <div onScroll={handleScroll} ref={contentRef}>
+            {skillsData.map((item) => (
+              // O ref se aplica apenas a div que foi clicada
+              <div
+                ref={Number(item.id.split('-')[1]) === numberRef ? textRef : null}
+                id={item.id}
+                key={item.id}
+              >
+                <h2>{item.title}</h2>
+                <div>
+                  {item.skills.map(skill => (
+                    <Fragment key={skill.title}>
+                      <h3>{skill.title}</h3>
+                      <div dangerouslySetInnerHTML={{__html:skill.html}}></div>
+                    </Fragment>
+                  ))}
+                </div>
+
+              </div>
+            ))}
           </div>
-        </Toggle>
-      ))}
-    </SkillsScrollContainerMobile>
+        </ContentTexts>
+      </SkillsScrollContainer>
+      <SkillsScrollContainerMobile>
+        {skillsData.map((item) => (
+          <Toggle
+            id={`${item.id}-mobile`}
+            key={`${item.id}-mobile`}
+            toggleMobileOpen={toggleMobileOpen === Number(item.id.split('-')[1])}
+          >
+            <button onClick={() => handleToggle(item.id)} type="button">
+              <h2>{item.title}</h2>
+                <IoIosArrowDown size={20} />
+            </button>
+            <div>
+              <ul>
+                {item.skills.map(skill => (
+                  <li key={skill.title}>
+                    <h3>{skill.title}</h3>
+                    <p dangerouslySetInnerHTML={{__html:skill.html}}>{}</p>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </Toggle>
+        ))}
+      </SkillsScrollContainerMobile>
+    </>
   );
 };
