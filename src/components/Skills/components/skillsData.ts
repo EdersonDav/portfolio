@@ -6,7 +6,7 @@ export const skillsData = [
         title:'JavaScript',
         html: `
           <p>
-            Trabalho com a <strong>JavaScript</strong> desde o incício da minha carreira como desenvolvedor, inicialmente utilizando em projetos de estudo juntamente com <strong>HTML5</strong> e <strong>CSS3</strong>
+            Trabalho com a <strong>JavaScript</strong> desde o incício da minha carreira como desenvolvedor, inicialmente utilizando em projetos de estudo juntamente com <strong>HTML5</strong> e <strong>CSS3</strong>.
           </p>
         `
       },
@@ -14,7 +14,7 @@ export const skillsData = [
         title:'Typescript',
         html: `
           <p>
-            Trabalho com a <strong>JavaScript</strong> desde o incício da minha carreira como desenvolvedor, inicialmente utilizando em projetos de estudo juntamente com <strong>HTML5</strong> e <strong>CSS3</strong>
+            Comecei a utilizar <strong>Typescript</strong> em projetos <strong>ReactJs</strong> e <strong>NodeJs</strong> em 2020 e tenho utilizado sempre que possível, pois facilita o desenvolvimento de novas funcionalidades e manutenções.
           </p>
         `
       }
@@ -27,7 +27,7 @@ export const skillsData = [
         title:'NodeJs',
         html: `
           <p>
-            Trabalho com a <strong>JavaScript</strong> desde o incício da minha carreira como desenvolvedor, inicialmente utilizando em projetos de estudo juntamente com <strong>HTML5</strong> e <strong>CSS3</strong>
+            Utilizo <strong>NodeJs</strong> normalmente nas <strong>APIs</strong> que preciso desenvolver.
           </p>
         `
       }, 
