@@ -4,19 +4,11 @@ export const skillsData = [
     skills: [
       {
         title:'JavaScript',
-        html: `
-          <p>
-            Trabalho com a <strong>JavaScript</strong> desde o incício da minha carreira como desenvolvedor, inicialmente utilizando em projetos de estudo juntamente com <strong>HTML5</strong> e <strong>CSS3</strong>.
-          </p>
-        `
+        html: `Trabalho com a JavaScript desde o incício da minha carreira como desenvolvedor, inicialmente utilizando em projetos de estudo juntamente com HTML5 e CSS3.`
       },
       {
         title:'Typescript',
-        html: `
-          <p>
-            Comecei a utilizar <strong>Typescript</strong> em projetos <strong>ReactJs</strong> e <strong>NodeJs</strong> em 2020 e tenho utilizado sempre que possível, pois facilita o desenvolvimento de novas funcionalidades e manutenções.
-          </p>
-        `
+        html: `Comecei a utilizar Typescript em projetos ReactJs e NodeJs em 2020 e tenho utilizado sempre que possível, pois facilita o desenvolvimento de novas funcionalidades e manutenções.`
       }
     ]
   },
@@ -25,51 +17,27 @@ export const skillsData = [
     skills: [
       {
         title:'NodeJs',
-        html: `
-          <p>
-            Utilizo <strong>NodeJs</strong> normalmente nas <strong>APIs</strong> que preciso desenvolver.
-          </p>
-        `
+        html: `Utilizo NodeJs normalmente nas APIs que preciso desenvolver.`
       }, 
       {
         title:'Express',
-        html: `
-          <p>
-            Trabalho com a <strong>JavaScript</strong> desde o incício da minha carreira como desenvolvedor, inicialmente utilizando em projetos de estudo juntamente com <strong>HTML5</strong> e <strong>CSS3</strong>
-          </p>
-        `
+        html: `Trabalho com a JavaScript desde o incício da minha carreira como desenvolvedor, inicialmente utilizando em projetos de estudo juntamente com HTML5 e CSS3`
       }, 
       {
         title:'TypeORM',
-        html: `
-          <p>
-            Trabalho com a <strong>JavaScript</strong> desde o incício da minha carreira como desenvolvedor, inicialmente utilizando em projetos de estudo juntamente com <strong>HTML5</strong> e <strong>CSS3</strong>
-          </p>
-        `
+        html: `Trabalho com a JavaScript desde o incício da minha carreira como desenvolvedor, inicialmente utilizando em projetos de estudo juntamente com HTML5 e CSS3`
       },
       {
         title:'Node-Cron',
-        html: `
-          <p>
-            Trabalho com a <strong>JavaScript</strong> desde o incício da minha carreira como desenvolvedor, inicialmente utilizando em projetos de estudo juntamente com <strong>HTML5</strong> e <strong>CSS3</strong>
-          </p>
-        `
+        html: `Trabalho com a JavaScript desde o incício da minha carreira como desenvolvedor, inicialmente utilizando em projetos de estudo juntamente com HTML5 e CSS3`
       }, 
       {
         title:'API-REST',
-        html: `
-          <p>
-            Trabalho com a <strong>JavaScript</strong> desde o incício da minha carreira como desenvolvedor, inicialmente utilizando em projetos de estudo juntamente com <strong>HTML5</strong> e <strong>CSS3</strong>
-          </p>
-        `
+        html: `Trabalho com a JavaScript desde o incício da minha carreira como desenvolvedor, inicialmente utilizando em projetos de estudo juntamente com HTML5 e CSS3`
       }, 
       {
         title:'Swagger',
-        html: `
-          <p>
-            Trabalho com a <strong>JavaScript</strong> desde o incício da minha carreira como desenvolvedor, inicialmente utilizando em projetos de estudo juntamente com <strong>HTML5</strong> e <strong>CSS3</strong>
-          </p>
-        `
+        html: `Trabalho com a JavaScript desde o incício da minha carreira como desenvolvedor, inicialmente utilizando em projetos de estudo juntamente com HTML5 e CSS3`
       }
     ]
   },
@@ -78,43 +46,23 @@ export const skillsData = [
     skills: [
       {
         title:'NextJs',
-        html: `
-          <p>
-            Trabalho com a <strong>JavaScript</strong> desde o incício da minha carreira como desenvolvedor, inicialmente utilizando em projetos de estudo juntamente com <strong>HTML5</strong> e <strong>CSS3</strong>
-          </p>
-        `
+        html: `Trabalho com a JavaScript desde o incício da minha carreira como desenvolvedor, inicialmente utilizando em projetos de estudo juntamente com HTML5 e CSS3`
       },
       {
         title:'ReactJs',
-        html: `
-          <p>
-            Trabalho com a <strong>JavaScript</strong> desde o incício da minha carreira como desenvolvedor, inicialmente utilizando em projetos de estudo juntamente com <strong>HTML5</strong> e <strong>CSS3</strong>
-          </p>
-        `
+        html: `Trabalho com a JavaScript desde o incício da minha carreira como desenvolvedor, inicialmente utilizando em projetos de estudo juntamente com HTML5 e CSS3`
       },
       {
         title:'Styled-Components',
-        html: `
-          <p>
-            Trabalho com a <strong>JavaScript</strong> desde o incício da minha carreira como desenvolvedor, inicialmente utilizando em projetos de estudo juntamente com <strong>HTML5</strong> e <strong>CSS3</strong>
-          </p>
-        `
+        html: `Trabalho com a JavaScript desde o incício da minha carreira como desenvolvedor, inicialmente utilizando em projetos de estudo juntamente com HTML5 e CSS3`
       },
       {
         title:'SASS',
-        html: `
-          <p>
-            Trabalho com a <strong>JavaScript</strong> desde o incício da minha carreira como desenvolvedor, inicialmente utilizando em projetos de estudo juntamente com <strong>HTML5</strong> e <strong>CSS3</strong>
-          </p>
-        `
+        html: `Trabalho com a JavaScript desde o incício da minha carreira como desenvolvedor, inicialmente utilizando em projetos de estudo juntamente com HTML5 e CSS3`
       },
       {
         title:'Redux-Toolkit',
-        html: `
-          <p>
-            Trabalho com a <strong>JavaScript</strong> desde o incício da minha carreira como desenvolvedor, inicialmente utilizando em projetos de estudo juntamente com <strong>HTML5</strong> e <strong>CSS3</strong>
-          </p>
-        `
+        html: `Trabalho com a JavaScript desde o incício da minha carreira como desenvolvedor, inicialmente utilizando em projetos de estudo juntamente com HTML5 e CSS3`
       }
     ]
   },
@@ -123,35 +71,19 @@ export const skillsData = [
     skills: [
       {
         title:'PostgreSQL',
-        html: `
-          <p>
-            Trabalho com a <strong>JavaScript</strong> desde o incício da minha carreira como desenvolvedor, inicialmente utilizando em projetos de estudo juntamente com <strong>HTML5</strong> e <strong>CSS3</strong>
-          </p>
-        `
+        html: `Trabalho com a JavaScript desde o incício da minha carreira como desenvolvedor, inicialmente utilizando em projetos de estudo juntamente com HTML5 e CSS3`
       },
       {
         title:'MySQL',
-        html: `
-          <p>
-            Trabalho com a <strong>JavaScript</strong> desde o incício da minha carreira como desenvolvedor, inicialmente utilizando em projetos de estudo juntamente com <strong>HTML5</strong> e <strong>CSS3</strong>
-          </p>
-        `
+        html: `Trabalho com a JavaScript desde o incício da minha carreira como desenvolvedor, inicialmente utilizando em projetos de estudo juntamente com HTML5 e CSS3`
       }
       ,{
         title:'MongoDB',
-        html: `
-          <p>
-            Trabalho com a <strong>JavaScript</strong> desde o incício da minha carreira como desenvolvedor, inicialmente utilizando em projetos de estudo juntamente com <strong>HTML5</strong> e <strong>CSS3</strong>
-          </p>
-        `
+        html: `Trabalho com a JavaScript desde o incício da minha carreira como desenvolvedor, inicialmente utilizando em projetos de estudo juntamente com HTML5 e CSS3`
       },
       {
         title:'Redis',
-        html: `
-          <p>
-            Trabalho com a <strong>JavaScript</strong> desde o incício da minha carreira como desenvolvedor, inicialmente utilizando em projetos de estudo juntamente com <strong>HTML5</strong> e <strong>CSS3</strong>
-          </p>
-        `
+        html: `Trabalho com a JavaScript desde o incício da minha carreira como desenvolvedor, inicialmente utilizando em projetos de estudo juntamente com HTML5 e CSS3`
       }
     ]
   },
@@ -160,27 +92,15 @@ export const skillsData = [
     skills: [
       {
         title:'Jest',
-        html: `
-          <p>
-            Trabalho com a <strong>JavaScript</strong> desde o incício da minha carreira como desenvolvedor, inicialmente utilizando em projetos de estudo juntamente com <strong>HTML5</strong> e <strong>CSS3</strong>
-          </p>
-        `
+        html: `Trabalho com a JavaScript desde o incício da minha carreira como desenvolvedor, inicialmente utilizando em projetos de estudo juntamente com HTML5 e CSS3`
       }, 
       {
         title:'Cypress',
-        html: `
-          <p>
-            Trabalho com a <strong>JavaScript</strong> desde o incício da minha carreira como desenvolvedor, inicialmente utilizando em projetos de estudo juntamente com <strong>HTML5</strong> e <strong>CSS3</strong>
-          </p>
-        `
+        html: `Trabalho com a JavaScript desde o incício da minha carreira como desenvolvedor, inicialmente utilizando em projetos de estudo juntamente com HTML5 e CSS3`
       }, 
       {
         title:'TDD',
-        html: `
-          <p>
-            Trabalho com a <strong>JavaScript</strong> desde o incício da minha carreira como desenvolvedor, inicialmente utilizando em projetos de estudo juntamente com <strong>HTML5</strong> e <strong>CSS3</strong>
-          </p>
-        `
+        html: `Trabalho com a JavaScript desde o incício da minha carreira como desenvolvedor, inicialmente utilizando em projetos de estudo juntamente com HTML5 e CSS3`
       }
     ]
   },
@@ -197,27 +117,15 @@ export const skillsData = [
       }, 
       {
         title:'SCRUM',
-        html: `
-          <p>
-            Trabalho com a <strong>JavaScript</strong> desde o incício da minha carreira como desenvolvedor, inicialmente utilizando em projetos de estudo juntamente com <strong>HTML5</strong> e <strong>CSS3</strong>
-          </p>
-        `
+        html: `Trabalho com a JavaScript desde o incício da minha carreira como desenvolvedor, inicialmente utilizando em projetos de estudo juntamente com HTML5 e CSS3`
       }, 
       {
         title:'Amazon-S3',
-        html: `
-          <p>
-            Trabalho com a <strong>JavaScript</strong> desde o incício da minha carreira como desenvolvedor, inicialmente utilizando em projetos de estudo juntamente com <strong>HTML5</strong> e <strong>CSS3</strong>
-          </p>
-        `
+        html: `Trabalho com a JavaScript desde o incício da minha carreira como desenvolvedor, inicialmente utilizando em projetos de estudo juntamente com HTML5 e CSS3`
       }, 
       {
         title:'SOLID',
-        html: `
-          <p>
-            Trabalho com a <strong>JavaScript</strong> desde o incício da minha carreira como desenvolvedor, inicialmente utilizando em projetos de estudo juntamente com <strong>HTML5</strong> e <strong>CSS3</strong>
-          </p>
-        `
+        html: `Trabalho com a JavaScript desde o incício da minha carreira como desenvolvedor, inicialmente utilizando em projetos de estudo juntamente com HTML5 e CSS3`
       }
     ]
   },
@@ -226,11 +134,7 @@ export const skillsData = [
     skills: [
       {
         title:'Linux',
-        html: `
-          <p>
-            Trabalho com a <strong>JavaScript</strong> desde o incício da minha carreira como desenvolvedor, inicialmente utilizando em projetos de estudo juntamente com <strong>HTML5</strong> e <strong>CSS3</strong>
-          </p>
-        `
+        html: `Trabalho com a JavaScript desde o incício da minha carreira como desenvolvedor, inicialmente utilizando em projetos de estudo juntamente com HTML5 e CSS3`
       }
     ]
   }

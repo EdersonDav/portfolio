@@ -4,10 +4,8 @@ export const Container = styled.section`
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  margin: 200px auto;
   @media(max-width: 1080px){
     flex-direction: column-reverse;
-    margin: 100px auto;
   }
 `
 

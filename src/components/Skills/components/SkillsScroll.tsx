@@ -141,7 +141,7 @@ export const SkillsScroll = (): JSX.Element => {
                   {item.skills.map(skill => (
                     <Fragment key={skill.title}>
                       <h3>{skill.title}</h3>
-                      <div dangerouslySetInnerHTML={{__html:skill.html}}></div>
+                      <p>{skill.html}</p>
                     </Fragment>
                   ))}
                 </div>
@@ -167,7 +167,7 @@ export const SkillsScroll = (): JSX.Element => {
                 {item.skills.map(skill => (
                   <li key={skill.title}>
                     <h3>{skill.title}</h3>
-                    <p dangerouslySetInnerHTML={{__html:skill.html}}>{}</p>
+                    <p>{skill.html}</p>
                   </li>
                 ))}
               </ul>

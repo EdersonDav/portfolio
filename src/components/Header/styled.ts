@@ -5,11 +5,12 @@ interface MenuProps {
 }
 export const Container = styled.div<MenuProps>`
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: space-between;
-  height: 100px;
-  background-color: transparent;
-  position: sticky;
+  height: 80px;
+  background-color: var(--background);
+  position: fixed;
+  z-index: 10;
   >button{
     display: none;
   }
@@ -79,13 +80,12 @@ export const DivName = styled.h1`
 export const DivNav = styled.div`
   width: 700px;
   margin: 0 20px;
-
+  justify-content: center;
   >ul{
-    padding-bottom: 5px;
     display: flex;
-    align-items: flex-end;
-    width: 100%;
-    justify-content:space-between ;
+    align-items: center;
+    width: 80%;
+    justify-content:space-around ;
     
   }
   @media(max-width: 1220px){
@@ -162,9 +162,8 @@ export const LiNav = styled.li<NavProps>`
 
 export const DivSocial = styled.div`
   >ul{
-    padding-bottom: 5px;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     @media(max-width: 1220px){
       flex-direction: column;
       align-items: center;

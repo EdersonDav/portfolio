@@ -21,6 +21,16 @@ export default createGlobalStyle`
   html{
     background: var(--background);
     padding: 0 5%;
+    
+  }
+
+  *{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
     &::-webkit-scrollbar-track {
       background-color: var(--green);
     }
@@ -33,17 +43,12 @@ export default createGlobalStyle`
       border-radius: 50px;
     }
   }
-
-  *{
-    margin: 0;
-    padding:0;
-    box-sizing: border-box;
-    outline: none;
-    text-decoration: none;
-    font-family: "Roboto", sans-serif;
-  }
   section{
-    margin-bottom: 200px;
+    padding: 200px 0 200px 0;
+    margin: 0 auto;
+    @media(max-width: 1080px){
+      padding: 100px 0 100px 0;
+    }
   }
   
   button{
