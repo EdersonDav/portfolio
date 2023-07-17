@@ -17,27 +17,15 @@ export const skillsData = [
     skills: [
       {
         title:'NodeJs',
-        html: `Utilizo NodeJs normalmente nas APIs que preciso desenvolver.`
+        html: `Utilizo NodeJs normalmente nas API's que preciso desenvolver, pois meus conhecimentos com Javascript me ajuda no desenvolvimento das mesmas.`
       }, 
       {
         title:'Express',
-        html: `Trabalho com a JavaScript desde o incício da minha carreira como desenvolvedor, inicialmente utilizando em projetos de estudo juntamente com HTML5 e CSS3`
-      }, 
-      {
-        title:'TypeORM',
-        html: `Trabalho com a JavaScript desde o incício da minha carreira como desenvolvedor, inicialmente utilizando em projetos de estudo juntamente com HTML5 e CSS3`
+        html: `Juntamente com NodeJs, utilizo o express em todas API's que desenvolvo com Javascript`
       },
       {
-        title:'Node-Cron',
-        html: `Trabalho com a JavaScript desde o incício da minha carreira como desenvolvedor, inicialmente utilizando em projetos de estudo juntamente com HTML5 e CSS3`
-      }, 
-      {
-        title:'API-REST',
-        html: `Trabalho com a JavaScript desde o incício da minha carreira como desenvolvedor, inicialmente utilizando em projetos de estudo juntamente com HTML5 e CSS3`
-      }, 
-      {
         title:'Swagger',
-        html: `Trabalho com a JavaScript desde o incício da minha carreira como desenvolvedor, inicialmente utilizando em projetos de estudo juntamente com HTML5 e CSS3`
+        html: `Para documentar as API's que desenvolvo utilizo o Swagger por conta da sua facilidade no entendimento das rotas`
       }
     ]
   },
@@ -45,24 +33,24 @@ export const skillsData = [
     title: "Front-End",
     skills: [
       {
-        title:'NextJs',
-        html: `Trabalho com a JavaScript desde o incício da minha carreira como desenvolvedor, inicialmente utilizando em projetos de estudo juntamente com HTML5 e CSS3`
+        title:'ReactJs',
+        html: `Comecei a utilizar o ReactJs no ano de 2020, migrando componentes de class components para function components. Assim aprendendo melhor os funcionamentos de Hooks do React`
       },
       {
-        title:'ReactJs',
-        html: `Trabalho com a JavaScript desde o incício da minha carreira como desenvolvedor, inicialmente utilizando em projetos de estudo juntamente com HTML5 e CSS3`
+        title:'NextJs',
+        html: `Comecei a utilizar o NextJs no ano de 2021 e hoje é a minha principal escolha no desenvolvimento de projetos front-ends`
       },
       {
         title:'Styled-Components',
-        html: `Trabalho com a JavaScript desde o incício da minha carreira como desenvolvedor, inicialmente utilizando em projetos de estudo juntamente com HTML5 e CSS3`
+        html: `Como minha principal ferramente de estilização, tento utilizar o styled-components na maioria dos projetos, trazendo facilidade na comunicação entre Javascript e CSS`
       },
       {
         title:'SASS',
-        html: `Trabalho com a JavaScript desde o incício da minha carreira como desenvolvedor, inicialmente utilizando em projetos de estudo juntamente com HTML5 e CSS3`
+        html: `Como em alguns projetos o uso de styled-components não é muito rentavel pelo fato da necessidade do Javascript, também desenvolvi minhas abilidades com SASS trazendo um laque maior de opções`
       },
       {
         title:'Redux-Toolkit',
-        html: `Trabalho com a JavaScript desde o incício da minha carreira como desenvolvedor, inicialmente utilizando em projetos de estudo juntamente com HTML5 e CSS3`
+        html: `Para melhor gerenciamento de states das aplicações adotei redux-toolkit como minha principal ferramenta de gerenciamento de stados no ReactJs e NextJS`
       }
     ]
   },
@@ -71,70 +59,15 @@ export const skillsData = [
     skills: [
       {
         title:'PostgreSQL',
-        html: `Trabalho com a JavaScript desde o incício da minha carreira como desenvolvedor, inicialmente utilizando em projetos de estudo juntamente com HTML5 e CSS3`
-      },
-      {
-        title:'MySQL',
-        html: `Trabalho com a JavaScript desde o incício da minha carreira como desenvolvedor, inicialmente utilizando em projetos de estudo juntamente com HTML5 e CSS3`
+        html: `Na maioria das aplicações que atuei profissionalmente, sempre foi utilizado banco relacionais como PostgreSQL, MySQL, SQLServer. Mesmo utilizando apenas comandos mais básicos e axiolio de ORM's, adquiri mais familiaridade com PostgreSQL`
       }
       ,{
         title:'MongoDB',
-        html: `Trabalho com a JavaScript desde o incício da minha carreira como desenvolvedor, inicialmente utilizando em projetos de estudo juntamente com HTML5 e CSS3`
+        html: `Nos meus projetos pessoais gosto de utlizar MongoDB, por conta da boa integração com Javascript e a facilidade de lidar com os dados em formato de objeto`
       },
       {
         title:'Redis',
-        html: `Trabalho com a JavaScript desde o incício da minha carreira como desenvolvedor, inicialmente utilizando em projetos de estudo juntamente com HTML5 e CSS3`
-      }
-    ]
-  },
-  {
-    title: "Testes",
-    skills: [
-      {
-        title:'Jest',
-        html: `Trabalho com a JavaScript desde o incício da minha carreira como desenvolvedor, inicialmente utilizando em projetos de estudo juntamente com HTML5 e CSS3`
-      }, 
-      {
-        title:'Cypress',
-        html: `Trabalho com a JavaScript desde o incício da minha carreira como desenvolvedor, inicialmente utilizando em projetos de estudo juntamente com HTML5 e CSS3`
-      }, 
-      {
-        title:'TDD',
-        html: `Trabalho com a JavaScript desde o incício da minha carreira como desenvolvedor, inicialmente utilizando em projetos de estudo juntamente com HTML5 e CSS3`
-      }
-    ]
-  },
-  {
-    title: "Ferramentas e Metodologias",
-    skills: [
-      {
-        title:'Git',
-        html: `
-            <p>
-              Trabalho com a <strong>JavaScript</strong> desde o incício da minha carreira como desenvolvedor, inicialmente utilizando em projetos de estudo juntamente com <strong>HTML5</strong> e <strong>CSS3</strong>
-            </p>
-          `
-      }, 
-      {
-        title:'SCRUM',
-        html: `Trabalho com a JavaScript desde o incício da minha carreira como desenvolvedor, inicialmente utilizando em projetos de estudo juntamente com HTML5 e CSS3`
-      }, 
-      {
-        title:'Amazon-S3',
-        html: `Trabalho com a JavaScript desde o incício da minha carreira como desenvolvedor, inicialmente utilizando em projetos de estudo juntamente com HTML5 e CSS3`
-      }, 
-      {
-        title:'SOLID',
-        html: `Trabalho com a JavaScript desde o incício da minha carreira como desenvolvedor, inicialmente utilizando em projetos de estudo juntamente com HTML5 e CSS3`
-      }
-    ]
-  },
-  {
-    title: "Sistemas Operacionais",
-    skills: [
-      {
-        title:'Linux',
-        html: `Trabalho com a JavaScript desde o incício da minha carreira como desenvolvedor, inicialmente utilizando em projetos de estudo juntamente com HTML5 e CSS3`
+        html: `Sempre que necessito criar um cache na aplicação para trazer mais velocidade de dados para o usuario, opto pela utilização do Redis, por ser uma ferramenta fácil de utilizar e que entrega performance para a as aplicações`
       }
     ]
   }

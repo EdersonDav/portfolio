@@ -5,12 +5,15 @@ import { HomeProps } from '../types/interfaces';
 
 import { Bio } from '../components/Bio';
 import { Skills } from '../components/Skills';
+import { Footer } from '../components/Footer';
 
 const Home = ({ userData }: HomeProps) => {
   return (
     <div className="wrapper">
       <Bio informations={userData} />
       <Skills />
+
+      <Footer/>
     </div>
   );
 };

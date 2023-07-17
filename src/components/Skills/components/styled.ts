@@ -99,7 +99,6 @@ export const ContentTexts = styled.div`
         margin-bottom: 7px;
         padding-left: 15px;
         max-width: 80%;
-        font-style: italic;
 
       }
 
