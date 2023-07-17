@@ -11,6 +11,9 @@ export const Container = styled.div<MenuProps>`
   background-color: var(--background);
   position: fixed;
   z-index: 10;
+  width:100%;
+  padding: 0 5%;
+  left: 0;
   >button{
     display: none;
   }

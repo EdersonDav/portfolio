@@ -44,10 +44,10 @@ export default createGlobalStyle`
     }
   }
   section{
-    padding: 200px 0 200px 0;
+    padding-top: 200px;
     margin: 0 auto;
-    @media(max-width: 1080px){
-      padding: 100px 0 100px 0;
+    @media(max-width: 768px){
+      padding-top: 100px;
     }
   }
   
