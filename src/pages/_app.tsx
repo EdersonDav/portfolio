@@ -3,17 +3,19 @@ import type { AppProps } from 'next/app';
 import { Header } from '../components/Header';
 import { useState } from 'react';
 import { OpenMenuButton } from '../components/OpenMenuButton';
+import { Footer } from '../components/Footer';
 
 function MyApp({ Component, pageProps }: AppProps) {
   const [isOpen, setIsOpen] = useState(false);
-  const toogleMenuMobile = () => {
+  const toggleMenuMobile = () => {
     setIsOpen(!isOpen);
   };
   return (
     <>
-      <OpenMenuButton toogleMenuMobile={toogleMenuMobile} isOpen={isOpen} />
-      <Header toogleMenuMobile={toogleMenuMobile} isOpen={isOpen} />
+      <OpenMenuButton toggleMenuMobile={toggleMenuMobile} isOpen={isOpen} />
+      <Header toggleMenuMobile={toggleMenuMobile} isOpen={isOpen} />
       <Component {...pageProps} />
+      <Footer/>
       <GlobalStyled />
     </>
   );

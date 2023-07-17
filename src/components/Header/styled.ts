@@ -3,6 +3,8 @@ import styled from "styled-components";
 interface MenuProps {
   isOpen: boolean;
 }
+
+
 export const Container = styled.div<MenuProps>`
   display: flex;
   align-items: center;
@@ -41,11 +43,12 @@ export const Container = styled.div<MenuProps>`
     >button{
       background-color: var(--background);
       border:0;
-      display: flex;
+      display: block;
       position: absolute;
       top: 20px;
       right: 10px;
       color: var(--green);
+      z-index: 999999;
     }
     >div, >h1{
       opacity: ${({ isOpen }: MenuProps) => !isOpen ? 0 : 1};
@@ -60,10 +63,10 @@ export const Container = styled.div<MenuProps>`
 `
 
 export const DivName = styled.h1`
+  width: 341px;
   letter-spacing: 1px;
   font-size: 32px;
   font-weight: 500;
-  max-width: 245px ;
   display: -webkit-box;
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
@@ -82,12 +85,16 @@ export const DivName = styled.h1`
 
 export const DivNav = styled.div`
   width: 700px;
-  margin: 0 20px;
+  flex: 1;
+  margin: 0 auto;
   justify-content: center;
   >ul{
+
+    gap: 20px;
     display: flex;
     align-items: center;
     width: 80%;
+    max-width: 700px;
     justify-content:space-around ;
     
   }
@@ -164,6 +171,7 @@ export const LiNav = styled.li<NavProps>`
 `
 
 export const DivSocial = styled.div`
+  width: 341px;
   >ul{
     display: flex;
     align-items: center;
@@ -232,7 +240,7 @@ export const CopyEmail = styled.div<CopyEmailProps>`
   background: transparent;
   z-index: 20;
   visibility: ${({ isCopy }: CopyEmailProps) => !isCopy ? 'hidden' : 'visible'};
-  bottom: ${({ isCopy }: CopyEmailProps) => !isCopy ? 0 : 20}px;
+  top: ${({ isCopy }: CopyEmailProps) => !isCopy ? 0 : 20}px;
   height: ${({ isCopy }: CopyEmailProps) => !isCopy ? '0px' : 'auto'};
   transition: all .3s;
   div{

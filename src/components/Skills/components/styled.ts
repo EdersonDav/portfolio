@@ -98,7 +98,7 @@ export const ContentTexts = styled.div`
         color: var(--txt-3); 
         margin-bottom: 7px;
         padding-left: 15px;
-        max-width: 80%;
+        max-width: 97%;
 
       }
 

@@ -16,10 +16,10 @@ import {
 
 interface HeaderProps {
   isOpen: boolean;
-  toogleMenuMobile: () => void;
+  toggleMenuMobile: () => void;
 }
 
-export const Header = ({ isOpen, toogleMenuMobile }: HeaderProps) => {
+export const Header = ({ isOpen, toggleMenuMobile }: HeaderProps) => {
   const [navSelected, setNavSelected] = useState('home');
   const [isCopy, setIsCopy] = useState(false);
   const navMenu = [
@@ -31,7 +31,7 @@ export const Header = ({ isOpen, toogleMenuMobile }: HeaderProps) => {
     {
       title: 'Tecnologias',
       key: 'tech',
-      link:'#technolies'
+      link:'#techs'
     },
     {
       title: 'Projetos',
@@ -50,55 +50,53 @@ export const Header = ({ isOpen, toogleMenuMobile }: HeaderProps) => {
       navigator.clipboard.writeText('silva.edersonqueiroz@gmail.com');
       setTimeout(() => {
         setIsCopy(false);
-      }, 2000);
+      }, 3000);
     }
   }, [isCopy]);
   return (
-    <>
-      <Container isOpen={isOpen}>
-        <button type="button" onClick={toogleMenuMobile}>
-          <CgClose size={30} />
-        </button>
-        <DivName>
-            Ederson Silva
-        </DivName>
-        <DivNav>
-          <ul>
-            {navMenu.map(nav =>(
-              <LiNav key={nav.key} selected={navSelected === nav.key}>
-                <a href={nav.link}  onClick={() => setNavSelected(nav.key)}>
-                  {nav.title}
-                </a>
-              </LiNav>
-            ))}
-          </ul>
-        </DivNav>
-        <DivSocial>
-          <ul>
-            <li>
-              <a href="https://github.com/EdersonDav" target="_blank">
-                <AiFillGithub size={20} />
-                GitHub
+    <Container isOpen={isOpen}>
+      <button type="button" onClick={toggleMenuMobile}>
+        <CgClose size={30} />
+      </button>
+      <DivName>
+          Ederson Silva
+      </DivName>
+      <DivNav>
+        <ul>
+          {navMenu.map(nav =>(
+            <LiNav key={nav.key} selected={navSelected === nav.key}>
+              <a href={nav.link}  onClick={() => setNavSelected(nav.key)}>
+                {nav.title}
               </a>
-            </li>
-            <li>
-              <a
-                href="https://www.linkedin.com/in/silvaedersonqueiroz/"
-                target="_blank"
-              >
-                <FaLinkedin size={20} />
-                LinkedIn
-              </a>
-            </li>
-            <li>
-              <button type="button" onClick={() => setIsCopy(true)}>
-                <CgMail size={20} />
-                Email
-              </button>
-            </li>
-          </ul>
-        </DivSocial>
-      </Container>
+            </LiNav>
+          ))}
+        </ul>
+      </DivNav>
+      <DivSocial>
+        <ul>
+          <li>
+            <a href="https://github.com/EdersonDav" target="_blank">
+              <AiFillGithub size={20} />
+              GitHub
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/silvaedersonqueiroz/"
+              target="_blank"
+            >
+              <FaLinkedin size={20} />
+              LinkedIn
+            </a>
+          </li>
+          <li>
+            <button type="button" onClick={() => setIsCopy(true)}>
+              <CgMail size={20} />
+              Email
+            </button>
+          </li>
+        </ul>
+      </DivSocial>
       <CopyEmail isCopy={isCopy}>
         <div>
           <p>silva.edersonqueiroz@gmail.com</p>
@@ -107,6 +105,6 @@ export const Header = ({ isOpen, toogleMenuMobile }: HeaderProps) => {
           </span>
         </div>
       </CopyEmail>
-    </>
+    </Container>
   );
 };

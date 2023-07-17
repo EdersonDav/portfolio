@@ -34,7 +34,7 @@ export const Bio = ({ informations }: BioProps) => {
           </p>
           <h2 className='skill' >Desenvolvedor <span> Full-Stack Web </span></h2>
           <Skills>
-            <p>{bioSubTitle}, desenvolvendo API's Rest e fazendo integrações em outros sistemas e construindo páginas responsivas seguindo designes desenhados no Figma. Gosto de me desenvolver diariamente e aprender formas novas de pensar em soluções.</p>
+            <p>{bioSubTitle}, desenvolvendo API's e fazendo integrações em outros sistemas e construindo páginas responsivas seguindo designes desenhados no Figma. Gosto de me desenvolver diariamente e aprender formas novas de pensar em soluções.</p>
           </Skills>
         </div>
         <ButtonInfo>

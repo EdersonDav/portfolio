@@ -3,14 +3,14 @@ import { Container } from './styled';
 
 interface HeaderProps {
   isOpen: boolean;
-  toogleMenuMobile: () => void;
+  toggleMenuMobile: () => void;
 }
-export const OpenMenuButton = ({ isOpen, toogleMenuMobile }: HeaderProps) => {
+export const OpenMenuButton = ({ isOpen, toggleMenuMobile }: HeaderProps) => {
   return (
     <Container
       className="openMenuMobile"
       type="button"
-      onClick={toogleMenuMobile}
+      onClick={toggleMenuMobile}
       isOpen={isOpen}
     >
       <CgMenuGridO size={30} />

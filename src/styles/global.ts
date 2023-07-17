@@ -32,7 +32,7 @@ export default createGlobalStyle`
     text-decoration: none;
     font-family: "Roboto", sans-serif;
     &::-webkit-scrollbar-track {
-      background-color: var(--green);
+      background-color: transparent;
     }
     &::-webkit-scrollbar {
       width: 6px;
@@ -44,10 +44,11 @@ export default createGlobalStyle`
     }
   }
   section{
-    padding-top: 200px;
+    padding-top: 160px;
     margin: 0 auto;
     @media(max-width: 768px){
-      padding-top: 100px;
+      padding-top: 0px;
+      margin-top: 100px;
     }
   }
   

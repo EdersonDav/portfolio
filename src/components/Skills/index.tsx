@@ -3,7 +3,7 @@ import { Container } from './styled';
 
 export const Skills = ():JSX.Element =>{
   return(
-    <Container id="technolies">
+    <Container id="techs">
       <h2>Tecnologias</h2>
       <SkillsScroll/>
     </Container>
