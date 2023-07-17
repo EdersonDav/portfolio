@@ -8,7 +8,7 @@ import {
   Container, 
   BioText, 
   ImagesBio, 
-  Skkils,
+  Skills,
   // DownloadCV,
   ButtonInfo
 } from './style';
@@ -33,9 +33,9 @@ export const Bio = ({ informations }: BioProps) => {
             Olá, sou Ederson Silva
           </p>
           <h2 className='skill' >Desenvolvedor <span> Full-Stack Web </span></h2>
-          <Skkils>
+          <Skills>
             <p>{bioSubTitle}, desenvolvendo API's Rest e fazendo integrações em outros sistemas e construindo páginas responsivas seguindo designes desenhados no Figma. Gosto de me desenvolver diariamente e aprender formas novas de pensar em soluções.</p>
-          </Skkils>
+          </Skills>
         </div>
         <ButtonInfo>
           <div>

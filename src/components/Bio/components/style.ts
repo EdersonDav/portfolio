@@ -107,7 +107,7 @@ export const IconContainer = styled.div<{color: string}>`
 
   @media(max-width: 760px){
     width: 12%;
-    height: 12%;
+    height: 14%;
     svg{
       font-size: 28px;
     }

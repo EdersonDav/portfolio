@@ -56,7 +56,7 @@ export const BioText = styled.div`
   }
 `
 
-export const Skkils = styled.div`
+export const Skills = styled.div`
   p{
     color: var(--txt-1);
     font-size: 20px;
@@ -78,9 +78,6 @@ export const ImagesBio = styled.div`
     @media(max-width: 1080px){
       width: 70%;
       margin-bottom: 50px;
-    }
-    @media(max-width: 760px){
-      margin-bottom: 100px;
     }
   }
 `
@@ -130,14 +127,6 @@ export const ButtonInfo = styled.div`
   }
 
   @media(max-width: 1080px){
-    margin-top: 0px ;
-    position: absolute;
-    right: 10px;
-    top: 275px;
-  }
-  @media(max-width: 760px){
-    left: 0px;
-    top: 325px;
     >div, >a{
       font-size: 30px;
       >svg{
@@ -155,17 +144,5 @@ export const ButtonInfo = styled.div`
         }
       }
     }
-  }
-  @media(max-width: 500px){
-    top: 325px;
-  }
-  @media(max-width: 450px){
-    top: 272px;
-  }
-  @media(max-width: 340px){
-    top: 205px;
-  }
-  @media(max-width: 240px){
-    position: relative;
   }
 `
